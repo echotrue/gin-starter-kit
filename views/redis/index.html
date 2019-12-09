@@ -1,0 +1,38 @@
+{{define "redis/index"}}
+    {{template "layout/header" .}}
+    <div class="row">
+        <div class="col-lg-1">
+            <select class="form-control" id="databases">
+                {{range $k,$v := .databases}}
+                    <option value="{{$k}}">{{$v}}</option>
+                {{end}}
+            </select>
+        </div>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button" id="command">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="list-group" id="list-tab" role="tablist">
+
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        {{range $k ,$v := .info}}
+            <div class="col-sm-2">{{$v}}</div>
+        {{end}}
+    </div>
+
+
+    {{template "layout/footer" .}}
+{{end}}
+

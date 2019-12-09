@@ -1,0 +1,87 @@
+{{define "layout/footer"}}
+
+    </div>
+    </body>
+    </html>
+
+    <script type="application/javascript">
+
+        $(function () {
+            $("#databases").change(function () {
+                db = $(this).val();
+
+                $.ajax({
+                    method: "POST",
+                    url: "/v1/redis/select",
+                    data: {id: db}
+                }).done(function (data) {
+                    alert("当前已切换到DB" + data.data.db)
+                }).fail(function (jqXHR, textStatus) {
+                    alert(jqXHR.responseJSON.message);
+                });
+
+                /*var request = $.ajax({
+                    url: "v1/redis/select",
+                    method: "POST",
+                    data: {id: db},
+                    dataType: "json"
+                });
+
+                request.success(function (jqXHR, textStatus) {
+
+                });
+                request.fail(function (jqXHR, textStatus {
+
+                })*/
+            });
+
+            $("#command").keydown(function (event) {
+                if (event.keyCode === 13) {
+                    $.ajax({
+                        method: "POST",
+                        url: "/v1/redis/search",
+                        data: {command: $(this).val()},
+                        /*beforeSend: function () {
+                            alert('before')
+                        }*/
+                    }).done(function (data) {
+                        var html = content = "";
+                        $.each(data.data, function (name, value) {
+                            html += '<a class="list-group-item list-group-item-action" id="' + name + '" data-toggle="list"\n' +
+                                '                       href="#tab-' + name + '" role="tab" aria-controls="home">' + value + '</a>';
+                            content += '<div class="tab-pane fade" id="tab-' + name + '" role="tabpanel" aria-labelledby="' + value + '-list">' +
+                                '                </div>';
+                        });
+                        $("#list-tab").html(html);
+                        $("#nav-tabContent").html(content);
+
+                    }).fail(function (jqXHR, textStatus) {
+                        alert(jqXHR.responseJSON.message);
+                    });
+                }
+            });
+
+            $('#list-tab').on('click', 'a', function (e) {
+                e.preventDefault();
+                //
+                $.ajax({
+                    method: "POST",
+                    url: "/v1/redis/excuse",
+                    data: {command: $(this).text()},
+                    /*beforeSend: function () {
+                        alert('before')
+                    }*/
+                }).done(function (data) {
+                    $('#nav-tabContent #tab-' + $(this).attr('id')).html(data.data);
+                    $(this).tab('show')
+
+                }).fail(function (jqXHR, textStatus) {
+                    alert(jqXHR.responseJSON.message);
+                });
+
+
+            })
+        })
+    </script>
+{{end}}
+
