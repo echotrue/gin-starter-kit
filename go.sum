@@ -28,12 +28,8 @@ github.com/gin-contrib/sse v0.0.0-20190301062529-5545eab6dad3 h1:t8FVkw33L+wilf2
 github.com/gin-contrib/sse v0.0.0-20190301062529-5545eab6dad3/go.mod h1:VJ0WA2NBN22VlZ2dKZQPAPnyWw5XTlK1KymzLKsr59s=
 github.com/gin-gonic/gin v1.4.0 h1:3tMoCCfM7ppqsR0ptz/wi1impNpT7/9wQtMZ8lr1mCQ=
 github.com/gin-gonic/gin v1.4.0/go.mod h1:OW2EZn3DO8Ln9oIKOvM++LBO+5UPHJJDH72/q/3rZdM=
-github.com/go-ozzo/ozzo-config v0.0.0-20160627170238-0ff174cf5aa6 h1:T2JpXPk0mDD6uTT6vAwmd6pmaPqiHsBvP9Ggjr3UpE4=
-github.com/go-ozzo/ozzo-config v0.0.0-20160627170238-0ff174cf5aa6/go.mod h1:2RI3/USV7S8KzKNwmZtofbkg/BsCIAmeqJ5sJBWQ6T4=
 github.com/go-ozzo/ozzo-dbx v1.0.15 h1:cahBHmsueUkRDhSM71f6TLfd1LtYN4XDce7iCblSYKA=
 github.com/go-ozzo/ozzo-dbx v1.0.15/go.mod h1:48NXRgCxSU5JUSW+EA5lnokrL7ql1j6Qh2RsWeh6Fvs=
-github.com/go-ozzo/ozzo-log v0.0.0-20160703175702-610cdd147d9a h1:L9+oKMCFD4Ow6SMmVCxdKyz/M7PG/u8vfo8bDyM4Mz0=
-github.com/go-ozzo/ozzo-log v0.0.0-20160703175702-610cdd147d9a/go.mod h1:5ohBI8MDCgdbxzLGFG/HvihaiL2TzD9LupyeLOTBSbQ=
 github.com/go-playground/locales v0.13.0 h1:HyWk6mgj5qFqCT5fjGBuRArbVDfE4hi8+e8ceBS/t7Q=
 github.com/go-playground/locales v0.13.0/go.mod h1:taPMhCMXrRLJO55olJkUXHZBHCxTMfnGwq/HNwmWNS8=
 github.com/go-playground/universal-translator v0.17.0 h1:icxd5fm+REJzpZx7ZfpaD876Lmtgy7VtROAbHHXk8no=
@@ -51,8 +47,6 @@ github.com/gomodule/redigo v2.0.0+incompatible/go.mod h1:B4C85qUVwatsJoIUNIfCRsp
 github.com/gorilla/context v1.1.1/go.mod h1:kBGZzfjB9CEq2AlWe17Uuf7NDRt0dE0s8S51q0aT7Yg=
 github.com/gorilla/mux v1.7.2/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=
 github.com/gorilla/pat v0.0.0-20180118222023-199c85a7f6d1/go.mod h1:YeAe0gNeiNT5hoiZRI4yiOky6jVdNvfO2N6Kav/HmxY=
-github.com/hnakamur/jsonpreprocess v0.0.0-20171017030034-a4e954386171 h1:G9nrYr376hLdDulCFOSmRiEa6X5vV6E/ANh+lQWmN4I=
-github.com/hnakamur/jsonpreprocess v0.0.0-20171017030034-a4e954386171/go.mod h1:ZSbf3Rg8HEW2bz6oeZBK8FbwS+g/s/KSrpZOx7CQSmw=
 github.com/json-iterator/go v1.1.6 h1:MrUvLMLTMxbqFJ9kzlvat/rYZqZnW3u4wkLzWTaFwKs=
 github.com/json-iterator/go v1.1.6/go.mod h1:+SdeFBvtyEkXs7REEP0seUULqWtbJapLOCVDaaPEHmU=
 github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7VTCxuUUipMqKk8s4w=
