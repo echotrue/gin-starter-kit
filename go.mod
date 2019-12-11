@@ -15,6 +15,7 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/hnakamur/jsonpreprocess v0.0.0-20171017030034-a4e954386171 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
+	github.com/sirupsen/logrus v1.4.2
 	github.com/vmihailenco/msgpack v4.0.4+incompatible
 	google.golang.org/appengine v1.6.5 // indirect
 	gopkg.in/go-playground/validator.v9 v9.30.0

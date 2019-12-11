@@ -6,6 +6,7 @@ type Config struct {
 	Database *Database
 	Redis    *Redis
 	GinModel string `toml:"gin_model"`
+	Log      *Log
 }
 
 // Database configuration
@@ -22,4 +23,19 @@ type Redis struct {
 	Host string `toml:"host"`
 	Port string `toml:"port"`
 	Auth string `toml:"auth"`
+}
+
+type Log struct {
+	Target  string `toml:"target"`
+	Level   string `toml:"level"`
+	File    *LogFile
+	Network *LogNetwork
+}
+
+
+type LogFile struct {
+	Filepath string `toml:"filepath"`
+}
+type LogNetwork struct {
+	Url string `toml:"url"`
 }
