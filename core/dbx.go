@@ -14,6 +14,7 @@ var (
 	instance *MysqlConnectPool
 	db       *dbx.DB
 	once     sync.Once
+	err      error
 )
 
 func DbInstance() *MysqlConnectPool {
