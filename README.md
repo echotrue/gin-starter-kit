@@ -20,15 +20,14 @@ go get
 fresh
 ```
 
-- Dependency
-    
-    The kit uses the following Go packages
-    
-    - log : `logrus`
-    - db : `ozzo-dbx`
-    - jwt :`gin-jwt`
-    - redis: `redigo`
-    - config : `toml`
+#### Dependency
+The kit uses the following Go packages    
+- log : `logrus`
+- db : `ozzo-dbx`
+- jwt :`gin-jwt`
+- redis: `redigo`
+- config : `toml`
+
 
 Todo
 - request log

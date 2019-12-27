@@ -16,3 +16,13 @@ db = "db_name"
 host = "192.168.0.22"
 port = "6397"
 auth = "auth text"
+
+[log]
+target = "File"  #日志输出 : File,Console,Network
+level = "debug"   #日志记录级别 panic fatal error warn info debug trace
+
+[log.file]
+filepath = "./runtime/log"
+
+#[log.network]
+#url = "http://127.0.0.1:9200"

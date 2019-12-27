@@ -9,6 +9,8 @@ import (
 	"time"
 )
 
+// Usage:
+// log.Logger.Error("Request error!");
 var (
 	Logger = logrus.New()
 )
